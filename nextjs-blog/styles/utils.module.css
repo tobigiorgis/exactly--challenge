@@ -1,3 +1,12 @@
+@font-face{
+    font-family: aeonikPro;
+    src: local('Aeonik-Medium.ttf'), url(../font/Aeonik-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: aeonikLight;
+    src: local('Aeonik-Light.ttf'), url(../font/Aeonik-Light.ttf) format('truetype');
+}
 
 .container{
     display: flex;
@@ -18,6 +27,7 @@
 .textnav{
     margin-left: 1vw;
     color: gray;
+    font-family: aeonikLight;
 }
 
 .logoNavOff{
@@ -51,11 +61,13 @@
 
 .mainPhrase{
     text-align: center;
-    font-size: 16px;
+    font-size: 17px;
     display: flex;
     justify-content: center;
     align-content: center;
     color: gray;
+    font-family: aeonikLight;
+    font-weight: 900;
 }
 
 /* Page 2 */
@@ -74,6 +86,7 @@
     color: gray;
     margin-top: 5vh;
     height: 4vh;
+    font-family: aeonikPro;
 }
 
 .div2b{
@@ -88,12 +101,13 @@
     margin: 0;
     font-size: 94px;
     font-weight: 500;
-    font-family: 'aeonikB';
+    font-family: aeonikPro;
 }
 
 .underText{
     font-size: 28px;
     color: gray;
+    font-family: aeonikLight;
 }
 
 .div2c{
@@ -113,17 +127,47 @@
     height: 5vh;
     border-radius: 20px;
     font-weight: 700;
+    font-family: aeonikPro;
 }
 
 .div2d{
     margin-top: 4vh;
 }
+
+.bigChart{
+    z-index: 1;
+    background-color: rgb(241, 241, 241);
+    padding: 1vw;
+    width: 100vh;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-radius: 10px;
+    margin-top: 10vh;
+}
+
+.buttonModal{
+    margin-right: 1vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5vw;
+    font-size: 16px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
 /* Page 3 */
 
 .div3a{
     color: gray;
     margin-top: 5vh;
     height: 4vh;
+    
 }
 
 .section3{
@@ -133,7 +177,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10vh
+    margin-top: 10vh;
+    font-family: aeonikPro;
 }
 
 .div3a{
@@ -156,6 +201,7 @@
 .changer{
     font-size: 36px;
     margin-top: 5vh;
+    font-family: aeonikLight;
 }
 
 .div3d{
@@ -199,6 +245,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 10vh;
+    font-family: aeonikPro;
 }
 
 .div4a{
@@ -258,6 +305,7 @@
     align-items: center;
     margin-top: 10vh;
     overflow: hidden;
+    font-family: aeonikPro;
 }
 
 .div5a{
@@ -284,22 +332,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 5vh;
-    transform:translateX(100%);
-    animation: cssmarquee 10s linear infinite;
 }
-
-.div5c:hover{
-    animation-play-state: paused;
-}
-
-@keyframes cssmarquee {
-    0% {
-    transform: translateX(40vw);
-    }
-    100% {
-    transform: translateX(-40vw);
-    }
-    }
 
 .avatarDiv{
     display: inline-flex;
@@ -338,6 +371,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 10vh;
+    font-family: aeonikPro;
 }
 
 .div6a{
@@ -413,6 +447,7 @@
     justify-content: space-evenly;
     align-items: center;
     margin-top: 10vh;
+    font-family: aeonikPro;
 }
 
 .div7b{
@@ -443,6 +478,7 @@
 
 .investorH3{
     color: rgb(151, 151, 151);
+    font-family: aeonikLight;
 }
 
 .div7c{
@@ -488,6 +524,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 10vh;
+    font-family: aeonikPro;
 }
 
 .join{
@@ -547,6 +584,7 @@
     width: 50vw;
     justify-content: space-evenly;
     color: gray;
+    font-family: aeonikLight;
 }
 
 .divFooter1{

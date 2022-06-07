@@ -4,9 +4,17 @@ import AdvisorList from '../components/AdvisorList';
 import AvatarList from '../components/AvatarList';
 import utilStyles from '../styles/utils.module.css';
 import InvestorList from '../components/InvestorList';
+import { useState } from 'react';
+import Marquee from "react-fast-marquee";
+
 
   export default function Home(){
-
+    const [visible, setVisible] = useState(false);
+    const handler = () => setVisible(true);
+    const closeHandler = () => {
+      setVisible(false);
+      console.log('closed');
+    }
   return (
     <div className={utilStyles.container}>
       <Head>
@@ -55,27 +63,32 @@ import InvestorList from '../components/InvestorList';
           </div>
       </main>
       {/* Page 2 */}
-      <section className={utilStyles.section2}>
-        <div className={utilStyles.div2a}>
-          <p>NO MORE BANK LOANS NEEDED</p>
-        </div>
-        <div className={utilStyles.div2b}>
-          <p className={utilStyles.h1}>Welcome to Exactly</p>
-          <p className={utilStyles.underText}>A fixed-income solution for lenders and borrowers</p>
-        </div>
-        <div className={utilStyles.div2c}>
-          <div className={utilStyles.protocol}>open source</div>
-          <div className={utilStyles.protocol}>decentralized</div>
-          <div className={utilStyles.protocol}>non-custodial</div>
-        </div>
-        <div className={utilStyles.div2d}>
-          <Image
-          src='/macChart.jpg'
-          width={300}
-          height={200}
-          />
-        </div>
+          {visible == false ? 
+              <section className={utilStyles.section2}>
+                  <div className={utilStyles.div2a}>
+                    <p>NO MORE BANK LOANS NEEDED</p>
+                </div>
+                <div className={utilStyles.div2b}>
+                  <p className={utilStyles.h1}>Welcome to Exactly</p>
+                  <p className={utilStyles.underText}>A fixed-income solution for lenders and borrowers</p>
+                </div>
+                <div className={utilStyles.div2c}>
+                  <div className={utilStyles.protocol}>open source</div>
+                  <div className={utilStyles.protocol}>decentralized</div>
+                  <div className={utilStyles.protocol}>non-custodial</div>
+                </div>
+                <div className={utilStyles.div2d} onClick={handler}>
+                  <Image
+                  src='/macChart.jpg'
+                  width={300}
+                  height={200}
+                  />
+                </div>
       </section>
+          : <div className={utilStyles.bigChart} onClick={closeHandler}>
+          <button className={utilStyles.buttonModal}>X</button>
+          <Image src='/chart.jpg' width={800} height={500}/> 
+        </div>}
 
       {/* Page 3 */}
       <section className={utilStyles.section3}>
@@ -86,7 +99,7 @@ import InvestorList from '../components/InvestorList';
           <p className={utilStyles.h1}>Decentralizing the time value of money</p>
         </div>
         <div className={utilStyles.div3c}>
-          <div className={utilStyles.changer}>Lend knowing Exactly how much you are gonna pay</div>
+          <div className={utilStyles.changer}>Lend knowing Exactly how much you are gonna earn</div>
         </div>
         <div className={utilStyles.div3d}>
           <p>Soon to go live. Subscribe for updates.</p>
@@ -132,9 +145,11 @@ import InvestorList from '../components/InvestorList';
         <div className={utilStyles.div5b}>
           <p className={utilStyles.h1}>Behind the scenes</p>
         </div>
-        <div className={utilStyles.div5c}>
-          <AvatarList/>
-        </div>
+        <Marquee gradient={true} pauseOnHover={true} speed={50}>
+          <div className={utilStyles.div5c}>
+            <AvatarList/>
+          </div>
+        </Marquee>
       </section>
 
       {/* Page 6 */}
@@ -205,7 +220,7 @@ import InvestorList from '../components/InvestorList';
     <section className={utilStyles.section8}>
         <p className={utilStyles.join}>Join us</p>
       <div className={utilStyles.div8a}>
-        <p className={utilStyles.h1}>Launching ASAP. You better know when.</p>
+        <p className={utilStyles.h1}>Launching soon. You better know when.</p>
         <div className={utilStyles.div8b}>
           <input placeholder='type your e-mail' className={utilStyles.input2}></input>
           <div className={utilStyles.suscribe}><p className={utilStyles.suscribeText}>Subscribe</p></div>
