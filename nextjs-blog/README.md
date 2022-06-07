@@ -1,1 +1,3 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+Webpage of Exactly-challenge developed with Next.js. 
+
+by Tobi
