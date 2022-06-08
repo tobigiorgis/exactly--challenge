@@ -364,7 +364,7 @@
 /* Page 6 */
 
 .section6{
-    height: 100vh;
+    /* height: 100vh; */
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -389,13 +389,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: max-content;
     width: 60vw;
     text-align: center;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 
 .advisorDiv{
+
     border-radius: 30px;
     padding: 1vw 1vw 1vw 3vw;
     display: flex;
@@ -451,12 +451,12 @@
 }
 
 .div7b{
-    width: 100vw;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     white-space: nowrap;
+    margin-bottom: 7vh;
 }
 
 .investorDiv{
@@ -471,9 +471,7 @@
     align-items: center;
     /* background-image: linear-gradient(180deg, #CACACA 0%, rgba(158, 158, 158, 0) 100%); */
     color: white;
-    background-color: black;
-    transform:translateX(100%);
-    animation: cssmarquee 10s linear infinite;
+    background-color: black; 
 }
 
 .investorH3{

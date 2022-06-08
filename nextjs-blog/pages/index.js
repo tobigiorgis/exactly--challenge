@@ -6,6 +6,8 @@ import utilStyles from '../styles/utils.module.css';
 import InvestorList from '../components/InvestorList';
 import { useState } from 'react';
 import Marquee from "react-fast-marquee";
+import { ScrollContainer, HorizontalSection, GellyElement } from 'react-nice-scroll';
+import "react-nice-scroll/dist/styles.css";
 
 
   export default function Home(){
@@ -15,7 +17,9 @@ import Marquee from "react-fast-marquee";
       setVisible(false);
       console.log('closed');
     }
+
   return (
+    <ScrollContainer>
     <div className={utilStyles.container}>
       <Head>
         <title>Create Next App</title>
@@ -77,6 +81,7 @@ import Marquee from "react-fast-marquee";
                   <div className={utilStyles.protocol}>decentralized</div>
                   <div className={utilStyles.protocol}>non-custodial</div>
                 </div>
+                <GellyElement>
                 <div className={utilStyles.div2d} onClick={handler}>
                   <Image
                   src='/macChart.jpg'
@@ -84,6 +89,7 @@ import Marquee from "react-fast-marquee";
                   height={200}
                   />
                 </div>
+                </GellyElement>
       </section>
           : <div className={utilStyles.bigChart} onClick={closeHandler}>
           <button className={utilStyles.buttonModal}>X</button>
@@ -124,10 +130,12 @@ import Marquee from "react-fast-marquee";
         <div className={utilStyles.div4b}>
           <p className={utilStyles.h1}>Featured Posts</p>
         </div>
+        <GellyElement>
         <div className={utilStyles.div4c}>
             <div className={utilStyles.post}><a className={utilStyles.link} target='_blank' href='https://medium.com/@exactly_finance/what-exactly-are-we-building-391d6db2692c'>What Exactly we are building</a></div>
             <div className={utilStyles.post}><a className={utilStyles.link} target='_blank' href='https://medium.com/@exactly_finance/defixed-income-101-948976c0e2c6'>DeFixed Income 101</a></div>
         </div>
+        </GellyElement>
         <div className={utilStyles.div4d}>
           <Image
           src='/defi.jpg'
@@ -161,7 +169,6 @@ import Marquee from "react-fast-marquee";
         <div className={utilStyles.div6b}>
           <AdvisorList/>
         </div>
-
       </section>
 
     {/* Page 7 */}
@@ -169,9 +176,13 @@ import Marquee from "react-fast-marquee";
         <div className={utilStyles.div7a}>
           <p className={utilStyles.h1}>Backed by</p>
         </div>
+        {/* <HorizontalSection> */}
+        <Marquee gradient={true} pauseOnHover={true} speed={50} direction='right'>
         <div className={utilStyles.div7b}>
           <InvestorList/>
         </div>
+        </Marquee>
+        {/* </HorizontalSection> */}
         <div className={utilStyles.div7c}>
           <div className={utilStyles.divInvestors1}>
           <Image
@@ -272,5 +283,6 @@ import Marquee from "react-fast-marquee";
       </footer>
     </section>
     </div>
+    </ScrollContainer>
   )
 }
