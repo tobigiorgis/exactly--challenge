@@ -131,10 +131,10 @@ import "react-nice-scroll/dist/styles.css";
           <p className={utilStyles.h1}>Featured Posts</p>
         </div>
         <GellyElement>
-        <div className={utilStyles.div4c}>
-            <div className={utilStyles.post}><a className={utilStyles.link} target='_blank' href='https://medium.com/@exactly_finance/what-exactly-are-we-building-391d6db2692c'>What Exactly we are building</a></div>
-            <div className={utilStyles.post}><a className={utilStyles.link} target='_blank' href='https://medium.com/@exactly_finance/defixed-income-101-948976c0e2c6'>DeFixed Income 101</a></div>
-        </div>
+          <div className={utilStyles.div4c}>
+              <div className={utilStyles.post}><a className={utilStyles.link} target='_blank' href='https://medium.com/@exactly_finance/what-exactly-are-we-building-391d6db2692c'>What Exactly we are building</a></div>
+              <div className={utilStyles.post}><a className={utilStyles.link} target='_blank' href='https://medium.com/@exactly_finance/defixed-income-101-948976c0e2c6'>DeFixed Income 101</a></div>
+          </div>
         </GellyElement>
         <div className={utilStyles.div4d}>
           <Image
@@ -176,13 +176,15 @@ import "react-nice-scroll/dist/styles.css";
         <div className={utilStyles.div7a}>
           <p className={utilStyles.h1}>Backed by</p>
         </div>
-        {/* <HorizontalSection> */}
-        <Marquee gradient={true} pauseOnHover={true} speed={50} direction='right'>
-        <div className={utilStyles.div7b}>
-          <InvestorList/>
-        </div>
-        </Marquee>
-        {/* </HorizontalSection> */}
+        <HorizontalSection>
+          <div className={"ns-horizontal-section__item"}>
+        {/* <Marquee gradient={true} pauseOnHover={true} speed={50} direction='right'> */}
+            <div className={utilStyles.div7b}>
+              <InvestorList/>
+            </div>
+          </div>
+        {/* </Marquee> */}
+        </HorizontalSection>
         <div className={utilStyles.div7c}>
           <div className={utilStyles.divInvestors1}>
           <Image

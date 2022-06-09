@@ -98,6 +98,10 @@
 }
 
 .h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     margin: 0;
     font-size: 94px;
     font-weight: 500;
@@ -199,6 +203,9 @@
 }
 
 .changer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
     font-size: 36px;
     margin-top: 5vh;
     font-family: aeonikLight;
@@ -402,12 +409,9 @@
     flex-direction: row;
     width: 50vw;
     justify-content: space-between;
+    align-items: center;
     margin-top: 3vh;
     background-color: rgb(214, 214, 214);
-}
-
-.advisorImg{
-    margin-left: 2vw;
 }
 
 .advisorDiv3{
@@ -590,4 +594,107 @@
     display: flex;
     width: 50vw;
     justify-content: space-evenly;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 360px) {
+    .underText{font-size: 16px;}
+    .mainPhrase{font-size: 16px;}
+    .h1{font-size: 56px;}
+    .protocol{width: 28vw; font-size: 14px;}
+    .div2c{width: 90vw;}
+    .div2a{font-size: 11px;}
+    .div3a{font-size: 11px;}
+    .div4a{font-size: 11px;}
+    .div5a{font-size: 11px;}
+    .changer{font-size: 20px;}
+    .input{width: 40vw;}
+    .post{width: 40vw; height: 20vh; font-size: 16px;}
+    .div4c{width: 80vw;}
+    .avatarDiv{width: 40vw;}
+    .avatarH3{font-size: 12px;}
+    .avatarH2{font-size: 16px;}
+    .advisorDiv{width: 80vw;}
+    .advisorH4{font-size: 10px;}
+    .advisorH3{font-size: 12px;}
+    .advisorH2{font-size: 14px;}
+    .div6b{width: 100vw;}
+    .investorDiv{width: 40vw;}
+    .divInvestors2{width: 100vw;}
+    .div8a{width: 100vw;}
+    .input2{width: 36vw;}
+    .suscribe{width: 30vw;}
+    .divFooter2{font-size: 10px;}
+}
+
+@media screen and (min-width: 640px) {
+    .div3a{font-size: 18px;}
+    .div2a{font-size: 18px;}
+    .div4a{font-size: 18px;}
+    .div5a{font-size: 18px;}
+    .underText{font-size: 18px;}
+    .h1{font-size: 72px;}
+    .protocol{width: 19vw;}
+    .div2c{width: 70vw;}
+    .changer{font-size: 24px;}
+    .input{width: 28vw;}
+    .post{width: 30vw; font-size: 14px;}
+    .avatarDiv{width: 25vw;}
+    .avatarH3{font-size: 12px;}
+    .avatarH2{font-size: 18px;}
+    .advisorDiv{width: 80vw;}
+    .advisorH4{font-size: 16px;}
+    .investorDiv{width: 20vw;}
+    .divInvestors2{width: 80vw;}
+    .div8a{width: 100vw;}
+    .input2{width: 22vw;}
+    .suscribe{width: 20vw;}
+}
+
+@media screen and (min-width: 768px) {
+    .h1{font-size: 80px;}
+    .underText{font-size: 24px;}
+    .mainPhrase{font-size: 22px;}
+    .post{width: 30vw; font-size: 18px;}
+    .div8a{width: 80vw;}
+    .advisorH3{font-size: 16px;}
+    .advisorH2{font-size: 20px;}
+}
+
+@media screen and (min-width: 1024px) {
+    .protocol{width: 16vw;}
+    .div2c{width: 55vw;}
+    .input{width: 18vw;}
+    .h1{font-size: 80px;}
+    .post{width: 30vw; font-size: 20px;}
+    .div4c{width: 70vw;}
+    .avatarDiv{width: 20vw;}
+    .avatarH3{font-size: 16px;}
+    .avatarH2{font-size: 20px;}
+    .advisorDiv{width: 70vw;}
+    .advisorH4{font-size: 20px;}
+    .investorDiv{width: 16vw;}
+    .div8a{width: 70vw;}
+    .input2{width: 18vw;}
+    .suscribe{width: 16vw;}
+}
+
+@media screen and (min-width: 1280px) {
+    .textnav{font-size: 20px;}
+    .h1{font-size: 92px;}
+    .underText{font-size: 28px;}
+    .protocol{font-size: 20px;}
+    .mainPhrase{font-size: 26px;}
+    .changer{font-size: 32px;}
+    .div3d{font-size: 16px;}
+    .post{width: 30vw; font-size: 24px;}
+    .avatarH3{font-size: 20px;}
+    .avatarH2{font-size: 24px;}
+    .advisorH4{font-size: 24px;}
+    .advisorH2{font-size: 28px;}
+    .advisorH3{font-size: 22px;}
+    .investorH3{font-size: 18px;}
+    .investorH2{font-size: 22px;}
+    .divFooter2{font-size: 20px;}
 }
