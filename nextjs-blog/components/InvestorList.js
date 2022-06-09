@@ -2,6 +2,7 @@ import React from 'react'
 import investors from '../data/investors'
 import Investor from './Investor'
 
+
 const InvestorList = () => {
     return (
         <div>

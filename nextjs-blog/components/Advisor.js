@@ -10,8 +10,8 @@ const Advisor = ({ advisor, job, imagen, type }) => {
             <Image
             className={utilStyles.advisorImg}
             src={newAdvisor.imagen} 
-            width={100}
-            height={70}
+            width={80}
+            height={80}
             />
             <div className={utilStyles.advisorDiv2}>
                 <p className={utilStyles.advisorH2}>{newAdvisor.advisor}</p>

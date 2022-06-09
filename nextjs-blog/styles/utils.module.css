@@ -16,7 +16,7 @@
 }   
 
 .nav{
-    padding-right: 3vw;
+    margin-right: 3vw;
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -35,8 +35,10 @@
 }
 
 .textDiv{
+    margin-left: 2vw;
     display: flex;
     flex-direction: row;
+    cursor: pointer;
 }
 
 .firstDivnav{
@@ -68,6 +70,10 @@
     color: gray;
     font-family: aeonikLight;
     font-weight: 900;
+}
+
+.arrow{
+    margin-bottom: 3vh;
 }
 
 /* Page 2 */
@@ -203,12 +209,17 @@
 }
 
 .changer{
+    background: #D6D6D6;
+    background: linear-gradient(to right, #D6D6D6 0%, #C4F5FF 100%);
+    background-clip: unset;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     display: flex;
     justify-content: center;
     text-align: center;
     font-size: 36px;
     margin-top: 5vh;
-    font-family: aeonikLight;
+    font-family: aeonikPro;
 }
 
 .div3d{
@@ -230,16 +241,20 @@
     width: 12vw;
 }
 
-.div3e{
+.subscButton{
+    cursor: pointer;
+    font-size: 14px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.press{
-    font-size: 12px;
-    color: gray;
+    width: 6vw;
+    height: 5vh;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    margin-top: 2vh;
+    box-shadow: none;
+    font-family: AeonikPro;
 }
 
 /* Page 4 */
@@ -281,6 +296,7 @@
 }
 
 .post{
+    padding: 1vw 3vw 1vw 3vw;
     font-size: 20px;
     display: flex;
     justify-content: center;
@@ -289,16 +305,14 @@
     margin: 2vw;
     width: 20vw;
     height: 20vh;
-    background-image: conic-gradient(rgba(169, 169, 169, 1),
-    rgba(217, 217, 217, 1),
-    rgba(144, 144, 144, 1));
+    background-color: #f4f4f4;
 }
 
 .link{
     display: flex;
     text-align: center;
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 /* Page 5 */
@@ -387,7 +401,7 @@
     align-items: center;
     justify-content: center;
     height: max-content;
-    width: 60vw;
+    width: 100vw;
     text-align: center;
 }
 
@@ -402,9 +416,9 @@
 }
 
 .advisorDiv{
-
+    height: 15vh;
     border-radius: 30px;
-    padding: 1vw 1vw 1vw 3vw;
+    padding: 1vw 3vw 1vw 3vw;
     display: flex;
     flex-direction: row;
     width: 50vw;
@@ -418,8 +432,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 2vw;
     width: 15vw;
+}
+
+.advisorDiv2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .advisorH2{
@@ -428,6 +448,7 @@
 }
 
 .advisorH3{
+    margin-top: -3vh;
     font-size: 18px;
     font-weight: bold;
     color: rgba(107, 107, 107, 1);
@@ -436,17 +457,16 @@
 .advisorH4{
     font-size: 22px;
     font-weight: bold;
-    color: rgba(169, 169, 169, 1);
-    ;
+    color: rgba(169, 169, 169, 1); 
 }
 
 
 /* Page 7 */
 
 .section7{
-    height: 100vh;
+    /* height: 100vh; */
     width: 100vw;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
@@ -460,7 +480,6 @@
     align-items: center;
     justify-content: center;
     white-space: nowrap;
-    margin-bottom: 7vh;
 }
 
 .investorDiv{
@@ -615,9 +634,9 @@
     .avatarDiv{width: 40vw;}
     .avatarH3{font-size: 12px;}
     .avatarH2{font-size: 16px;}
-    .advisorDiv{width: 80vw;}
+    .advisorDiv{width: 60vw;}
     .advisorH4{font-size: 10px;}
-    .advisorH3{font-size: 12px;}
+    .advisorH3{font-size: 12px; margin-top: -1vh;}
     .advisorH2{font-size: 14px;}
     .div6b{width: 100vw;}
     .investorDiv{width: 40vw;}
@@ -643,7 +662,7 @@
     .avatarDiv{width: 25vw;}
     .avatarH3{font-size: 12px;}
     .avatarH2{font-size: 18px;}
-    .advisorDiv{width: 80vw;}
+    .advisorDiv{width: 50vw;}
     .advisorH4{font-size: 16px;}
     .investorDiv{width: 20vw;}
     .divInvestors2{width: 80vw;}
@@ -658,7 +677,7 @@
     .mainPhrase{font-size: 22px;}
     .post{width: 30vw; font-size: 18px;}
     .div8a{width: 80vw;}
-    .advisorH3{font-size: 16px;}
+    .advisorH3{font-size: 16px; margin-top: -2vh;}
     .advisorH2{font-size: 20px;}
 }
 
@@ -672,7 +691,7 @@
     .avatarDiv{width: 20vw;}
     .avatarH3{font-size: 16px;}
     .avatarH2{font-size: 20px;}
-    .advisorDiv{width: 70vw;}
+    .advisorDiv{width: 50vw;}
     .advisorH4{font-size: 20px;}
     .investorDiv{width: 16vw;}
     .div8a{width: 70vw;}
@@ -688,12 +707,13 @@
     .mainPhrase{font-size: 26px;}
     .changer{font-size: 32px;}
     .div3d{font-size: 16px;}
-    .post{width: 30vw; font-size: 24px;}
+    .post{width: 25vw; font-size: 24px; height: 25vh;}
+    .div4c{width: 65vw;}
     .avatarH3{font-size: 20px;}
     .avatarH2{font-size: 24px;}
     .advisorH4{font-size: 24px;}
     .advisorH2{font-size: 28px;}
-    .advisorH3{font-size: 22px;}
+    .advisorH3{font-size: 22px; margin-top: -3vh;}
     .investorH3{font-size: 18px;}
     .investorH2{font-size: 22px;}
     .divFooter2{font-size: 20px;}

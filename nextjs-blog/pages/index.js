@@ -1,5 +1,7 @@
 import Head from 'next/Head';
 import Image from 'next/image';
+import Typed from "typed.js";
+import { useEffect, useRef } from "react";
 import AdvisorList from '../components/AdvisorList';
 import AvatarList from '../components/AvatarList';
 import utilStyles from '../styles/utils.module.css';
@@ -17,6 +19,20 @@ import "react-nice-scroll/dist/styles.css";
       setVisible(false);
       console.log('closed');
     }
+
+    const el = useRef(null);
+
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ["Lend Exactly knowing how much you are gonna pay.", "Borrow Exactly knowing how much you are gonna earn."], // Strings to display
+      // Speed settings, try diffrent values untill you get good results
+      startDelay: 300,
+      typeSpeed: 80,
+      backSpeed: 50,
+      backDelay: 500,
+      loop: true
+    });
+  }, []);
 
   return (
     <ScrollContainer>
@@ -61,8 +77,8 @@ import "react-nice-scroll/dist/styles.css";
           <div className={utilStyles.arrow}>
             <Image
             src='/arrow.jpg'
-            width={80}
-            height={50}
+            width={20}
+            height={10}
             />
           </div>
       </main>
@@ -105,20 +121,12 @@ import "react-nice-scroll/dist/styles.css";
           <p className={utilStyles.h1}>Decentralizing the time value of money</p>
         </div>
         <div className={utilStyles.div3c}>
-          <div className={utilStyles.changer}>Lend knowing Exactly how much you are gonna earn</div>
+          <div className={utilStyles.changer}><span ref={el}></span></div>
         </div>
         <div className={utilStyles.div3d}>
           <p>Soon to go live. Subscribe for updates.</p>
           <input className={utilStyles.input} placeholder='type tour e-mail'></input>
-        </div>
-        <div className={utilStyles.div3e}>
-        <p className={utilStyles.press}>Press the ETH logo to suscribe</p>
-          <Image
-          className={utilStyles.ethLogo}
-          src='/eth.jpg'
-          width={60}
-          height={35}
-          />
+          <div className={utilStyles.subscButton}>Subscribe</div>
         </div>
       </section>
 
@@ -177,13 +185,13 @@ import "react-nice-scroll/dist/styles.css";
           <p className={utilStyles.h1}>Backed by</p>
         </div>
         <HorizontalSection>
-          <div className={"ns-horizontal-section__item"}>
+          <div className='ns-horizontal-section__item'>
         {/* <Marquee gradient={true} pauseOnHover={true} speed={50} direction='right'> */}
             <div className={utilStyles.div7b}>
               <InvestorList/>
             </div>
           </div>
-        {/* </Marquee> */}
+        {/* { </Marquee> } */}
         </HorizontalSection>
         <div className={utilStyles.div7c}>
           <div className={utilStyles.divInvestors1}>
