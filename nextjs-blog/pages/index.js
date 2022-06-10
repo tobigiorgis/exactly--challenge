@@ -72,7 +72,10 @@ import "react-nice-scroll/dist/styles.css";
               width={600}
               height={100}
               />
-              <p className={utilStyles.mainPhrase}>Looking for a fixed-income solution?  We got EXACTLY what you need.</p>
+              <div className={utilStyles.divMainPhrase}>
+                <p className={utilStyles.mainPhrase}>Looking for a fixed-income solution?</p>
+                <p className={utilStyles.mainPhrase2}>We got EXACTLY what you need.</p>
+              </div>
           </div>
           <div className={utilStyles.arrow}>
             <Image
