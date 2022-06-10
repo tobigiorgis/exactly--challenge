@@ -32,7 +32,7 @@ import "react-nice-scroll/dist/styles.css";
       backDelay: 500,
       loop: true
     });
-  }, []);
+  });
 
   return (
     <ScrollContainer>
