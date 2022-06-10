@@ -1,4 +1,4 @@
-import Head from 'next/Head';
+import Head from 'next/head';
 import Image from 'next/image';
 import Typed from "typed.js";
 import { useEffect, useRef } from "react";
